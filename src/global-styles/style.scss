@@ -1,0 +1,19 @@
+/// Main Styles File
+/// Here we import all the global Styles files we need for our project.
+
+@import "styles/normalize.scss";
+@import "styles/root.scss";
+@import "styles/fonts.scss";
+
+html,
+body {
+	font-family: "Manrope", sans-serif;
+	color: var(--color-primary);
+	min-width: 100vw;
+	min-height: 100vh;
+	overflow: hidden;
+}
+
+p {
+	color: var(--color-on-surface);
+}

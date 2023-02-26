@@ -1,0 +1,118 @@
+/// Homepage Styles File
+/// Here we import all the Styles files we need for our Homepage.
+
+#home-page {
+	background-color: #0c1829;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	.card__container {
+		border-radius: 1.25rem; //20px
+		height: 486px;
+		width: 343px;
+		background-color: #13243c;
+		position: relative;
+		overflow: hidden;
+		.card__background-img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+		}
+		.card__content-container {
+			position: absolute;
+			left: 0;
+			bottom: 1.2rem;
+			.card__text-container {
+				color: #fff;
+				margin-left: 1.5rem;
+				width: 70%;
+				h1 {
+					font-size: 1.5rem;
+					line-height: 1.5rem;
+					padding-bottom: 1.3rem;
+					margin: 0;
+				}
+				p {
+					color: #9293b9;
+					font-size: 1.125rem;
+					line-height: 160%;
+					margin: 0;
+					padding-bottom: 2px;
+				}
+			}
+			.card__token-container {
+				display: flex;
+				justify-content: space-between;
+				padding: 1.5rem;
+				.card__token {
+					display: flex;
+					align-items: center;
+					gap: 10px;
+					color: #04fcfa;
+					span {
+						font-weight: bold;
+					}
+				}
+				.card__expire-time {
+					display: flex;
+					align-items: center;
+					gap: 10px;
+					color: #9293b9;
+					margin-right: 11px;
+					span {
+						font-size: 0.875rem;
+					}
+				}
+			}
+		}
+		.card__stroke {
+			height: 1px;
+			background-color: #2b3953;
+			margin: 0 1.5rem;
+		}
+		.card__creator-container {
+			margin: 1rem 1.5rem 0;
+			display: flex;
+			align-items: center;
+			gap: 1rem;
+			p {
+				color: #9293b9;
+				font-size: 0.875rem;
+				span {
+					color: #fff;
+				}
+			}
+		}
+	}
+}
+
+// ============ DESKTOP ====================
+@media screen and (min-width: 1025px) {
+	#home-page {
+		.card__container {
+			height: 556px;
+			width: 413px;
+			.card__content-container {
+				.card__token-container {
+					.card__token {
+						span {
+							font-size: 1.125rem;
+						}
+					}
+					.card__expire-time {
+						span {
+							font-size: 1rem;
+						}
+					}
+				}
+				.card__creator-container {
+					p {
+						font-size: 1rem;
+					}
+				}
+			}
+		}
+	}
+}
